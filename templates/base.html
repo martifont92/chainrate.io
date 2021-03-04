@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom.css') }}">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename ='img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename ='img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename ='img/favicon/favicon-16x16.png') }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5LG8D00T6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W5LG8D00T6');
+    </script>
 </head>
 
 <body>
@@ -29,12 +44,13 @@
 
     		<div id="navbarBasicExample" class="navbar-menu">
       		<div class="navbar-start">
-        		<a href="#" class="navbar-item">Exchanges</a>
+        		<a href="{{ '/exchanges' }}" class="navbar-item">Exchanges</a>
             <a href="{{ '/wallets' }}" class="navbar-item">Wallets</a>
             <a href="{{ '/cards' }}" class="navbar-item">Debit/Credit Cards</a>
-            <a href="#" class="navbar-item">Where to Buy</a>
+            <a href="{{ '/whereToBuy' }}" class="navbar-item">Where to Buy?</a>
           </div>
 
+          <!--
           <div class="navbar-end">
           	<div class="navbar-item">
           		<div class="buttons">
@@ -46,6 +62,7 @@
           			</a>
           		</div>
           	</div>
+            -->
           </div>
         </div>
       </div>
@@ -58,7 +75,7 @@
   <footer class="footer mt-6">
     <div class="content has-text-centered">
       <p class="is-size-6">
-        © Copyright 2021 <strong>chainrate.io</strong> / Contact at <a href="#" class="has-text-primary">hello@chainrate.io</a>
+        © Copyright 2021 <strong>chainrate.io</strong> / Contact at <a href="mailto:chainrate@pm.me" class="has-text-primary">chainrate@pm.me</a>
       </p>
       <p class="is-size-7 ">
         <a href="#" alt="Privacy Policy">Privacy Policy</a> / <a href="#" alt="Terms of Service">Terms of Service</a>

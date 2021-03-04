@@ -2,6 +2,10 @@ body{
 	background-color: #fafbfc;
 }
 
+.is-transparent{
+	opacity: 0.8;
+}
+
 .is-family-secondary{
 	font-family: 'DM Serif Display', serif !important;
 }
@@ -19,9 +23,32 @@ body{
 }
 
 .has-text-primary {
-	color: hsl(171, 100%, 41%) !important;
+	color: #000 !important;
+	/* hsl(171, 100%, 41%) */
+	font-weight: 600;
 }
 
 .img-radius{
 	border-radius: 6px;
+}
+
+/* Protfolio */
+.btc{
+	background-color: rgb(255,153,0, 0.2);
+}
+
+.eth{
+	background-color: rgb(60,60,61, 0.2);
+}
+
+.xlm{
+	background-color: rgb(4,181,229, 0.2);
+}
+
+.vet{
+	background-color: rgb(136,130,208, 0.2);
+}
+
+.xtz{
+	background-color: rgb(44,111,252, 0.2);
 }

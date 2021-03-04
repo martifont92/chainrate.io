@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="container is-max-desktop">
-	<section class="hero is-medium is-primary is-bold mt-5">
+	<section class="hero is-transparent is-medium is-primary is-bold mt-5">
 		<div class="hero-body">
 			<h1 class="title is-size-1 has-text-centered has-text-weight-bold is-family-secondary block">
   			Guiding you through your crypto journey
@@ -17,7 +17,7 @@
 
   <div class="item columns mt-3">
     <div class="column is-3">
-      <a class="box" href="">
+      <a class="box" href="{{ '/exchanges' }}">
         <p class="is-size-2 has-text-weight-bold has-text-centered">
           <span class="icon">
             <i class="fas fa-exchange-alt"></i>
@@ -53,7 +53,7 @@
     </div>
 
     <div class="column is-3">
-      <a class="box" href="">
+      <a class="box" href="{{ '/whereToBuy' }}">
         <p class="is-size-2 has-text-weight-bold has-text-centered">
           <span class="icon">
             <i class="fab fa-bitcoin"></i>
@@ -64,38 +64,186 @@
       </a>
     </div>
   </div>
-  
-  <!---
-  <h4 class="title is-size-6 has-text-weight-bold has-text-centered">A TRUSTED PROVIDER OF ACURATE RATES AND FEES</h4>
-  --->
 
-  <div class="has-text-centered mt-5">
+  <div class="block has-text-centered mt-6">
     <h1 class="title has-text-weight-bold is-family-secondary">Getting Started</h1>
-    <p class="subtitle">
-      At <strong>chainrate.io</strong> we knot that the cryptocurrency world can be overwhelming, especially if you are just getting started. We want to make it easier for you to buy, store and trade cryptocurrency. Here you will find a curated selection of the best products and services of the industry.
+    <p class="subtitle is-size-6">
+      At <strong>chainrate.io</strong> we know that the cryptocurrency world can be overwhelming, especially if you are just getting started. We want to make it easier for you to buy, store and trade cryptocurrency. Here you will find a curated selection of the best products and services of the industry.
   </div>
 
-  <div class="columns mt-6">
-    <div class="column is-two-fifths">
-      <img class="img-radius" src="{{ url_for('static', filename = 'img/computer.png')}}">
-    </div>
-    <div class="column">
-      <h1 class="title is-family-secondary">Featured</h1>
-      <p class="subtitle is-size-6 has-text-justified mt-1">
-        ✅ <strong>Hardware Wallet <a href="https://shop.ledger.com/pages/ledger-nano-x?r=2a078fedc641" target="_blank" class="has-text-primary">Ledger Nano X</a></strong>
-      </p>
-      <p class="subtitle is-size-6 has-text-justified">
-        ✅ <strong>Hardware Wallet <a href="https://lddy.no/u8f2" target="_blank" class="has-text-primary">Keep Key</a></strong>
-      </p>
-      <p class="subtitle is-size-6 has-text-justified">
-        ✅ <strong>Hardware Wallet <a href="https://shop.trezor.io/product/trezor-one-black?offer_id=35&aff_id=6366" target="_blank" class="has-text-primary">Trezor One</a></strong>
-      </p>
-      <p class="subtitle is-size-6 has-text-justified">
-        ✅ <strong>Software Wallet <a href="https://electrum.org/#home" target="_blank" class="has-text-primary">Electrum</a></strong>
-      </p>
+  <div class="block mt-6">
+    <h1 class="title has-text-centered is-family-secondary">Today's Featured Products</h1>
+    <div class="columns">
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ url_for('static', filename = 'img/featured/kraken.jpg') }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Kraken</p>
+            <p class="subtitle is-6">Exchange</p>
+            <div class="content">
+              An intuitive experience from the start.
+              Kraken puts the power in your hands to buy, sell and trade digital currency. <a href="https://twitter.com/krakenfx" target="_blank">@krakenfx</a>.
+            </div>
+            <div class="has-text-centered">
+              <a href="https://r.kraken.com/JgE1r" target="_blank" class="button is-primary is-rounded has-text-centered">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ url_for('static', filename = 'img/featured/ledger.jpg') }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Ledger Nano X</p>
+            <p class="subtitle is-6">Hardware Wallet</p>
+            <div class="content">
+              Hardware wallet technology that provides the highest level of security for crypto assets. <a href="https://twitter.com/Ledger" target="_blank">@Ledger</a>.
+            </div>
+            <div class="has-text-centered">
+              <a href="https://shop.ledger.com/pages/ledger-nano-x?r=2a078fedc641" target="_blank" class="button is-primary is-rounded has-text-centered">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{ url_for('static', filename = 'img/featured/blockfi.jpg') }}">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">BlockFi</p>
+            <p class="subtitle is-6">Exchange/Loans</p>
+            <div class="content">
+              With BlockFi, you can use cryptocurrency to earn interest, borrow cash, and buy or sell crypto.<a href="https://twitter.com/blockfi" target="_blank">@BlockFi</a>.
+            </div>
+            <div class="has-text-centered">
+              <a href="https://blockfi.mxuy67.net/aBzKM" target="_blank" class="button is-primary is-rounded has-text-centered">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  
+  <div class="block mt-6">
+    <h1 class="title has-text-centered has-text-weight-bold is-family-secondary">Our Current Portfolio</h1>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child notification btc">
+          <div class="content">
+            <p class="title">Bitcoin</p>
+            <p class="subtitle">40%</p>
+          </div>
+        </article>
+      </div>
+      <div class="tile is-vertical is-7">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification xtz">
+              <p class="title">Tezos</p>
+              <p class="subtitle">10%</p>
+            </article>
+            <article class="tile is-child notification vet">
+              <p class="title">VeChain</p>
+              <p class="subtitle">10%</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification eth">
+              <p class="title">Ethereum</p>
+              <p class="subtitle">25%</p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification xlm">
+            <p class="title">Stellar</p>
+            <p class="subtitle">15%</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block mt-6">
+    <h4 class="title is-size-5 has-text-weight-bold has-text-centered">BRANDS WE COMPARE</h4>
+    <p class="subtitle is-size-6 has-text-centered">Save with deals from the following well-known brands and many more...</p>
+    <div class="columns is-multiline has-text-centered">
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/binance.png') }}" width="139" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/ledger.png') }}" width="106" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/paxful.png') }}" width="110" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/coinbase.png') }}" width="102" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/trezor.png') }}" width="89" height="28">
+      </div>
+
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/nexo.png') }}" width="115" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/kraken.png') }}" width="130" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/changelly.png') }}" width="123" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/bitpay.png') }}" width="76" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/blockfi.png') }}" width="127" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/wirex.png') }}" width="94" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/bitstamp.png') }}" width="114" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/kucoin.png') }}" width="106" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/cex.png') }}" width="108" height="28">
+      </div>
+      <div class="column is-one-fifth">
+        <img src="{{ url_for('static', filename = 'img/brands/electrum.png') }}" width="155" height="28">
+      </div>
+    </div>
+  </div>
+
+  <div class="block mt-6">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <h1 class="title is-size-4 has-text-weight-bold has-text-left">Why chainrate.io?</h1>
+      </div>
+      <div class="column is-desktop">
+        <p class="has-text-justified">
+          <strong>Chainrate.io</strong> makes choosing a wallet, exchange, credit card or platform to buy cryptocurrency easy and secure.
+          Whether you are a first-time bitcoin buyer or an experienced cryptocurrency investor – chainrate's comprehensive product comparison web-site may save you time and keep you away from possible fraudulent sites.
+          Our cryptocurrency products comparison tables let you see the main characteristics of the products with ease and decide by yourself what product better suits your needs.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
